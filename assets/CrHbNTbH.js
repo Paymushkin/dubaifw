@@ -1,1 +1,0 @@
-import{J as a,e}from"./BlT8PafW.js";const n=e(0),o=e(0),C=()=>{const s=t=>{n.value=t},u=t=>{o.value=t},i=()=>n.value,r=()=>o.value;return{companiesCount:a(n),trialWaitlistCount:a(o),updateCompaniesCount:s,updateTrialWaitlistCount:u,getCompaniesCount:i,getTrialWaitlistCount:r}};export{C as u};
