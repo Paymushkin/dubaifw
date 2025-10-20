@@ -16,7 +16,14 @@
     <meta http-equiv="refresh" content="2; url=https://emiratesfashionweeks.com/?to=/welcome/" />
   </head>
   <body>
-    <script>window.location.replace('https://emiratesfashionweeks.com/?to=/welcome/');</script>
+    <script>
+      (function(){
+        var qs = window.location.search || '';
+        var target = '/welcome' + qs;
+        var url = 'https://emiratesfashionweeks.com/?to=' + encodeURIComponent(target);
+        window.location.replace(url);
+      })();
+    </script>
   </body>
 </html>
 
