@@ -17,6 +17,41 @@
 import { photographers } from '@/constants/photographers';
 import PhotographerBlock from '@/components/PhotographerBlock.vue';
 
+// SEO мета-теги
+useHead({
+  title: 'Gallery - Emirates Fashion Week Dubai 2025',
+  meta: [
+    {
+      name: 'description',
+      content: 'Explore the stunning gallery of Emirates Fashion Week Dubai 2025. View exclusive photos from runway shows, designer collections, and behind-the-scenes moments.'
+    },
+    {
+      name: 'keywords',
+      content: 'Emirates Fashion Week Gallery, Dubai Fashion Photos, Fashion Show Gallery, Runway Photos Dubai, Fashion Week Images'
+    },
+    {
+      property: 'og:title',
+      content: 'Gallery - Emirates Fashion Week Dubai 2025'
+    },
+    {
+      property: 'og:description',
+      content: 'Explore the stunning gallery of Emirates Fashion Week Dubai 2025. View exclusive photos from runway shows, designer collections, and behind-the-scenes moments.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://emiratesfashionweeks.com/seo-poster.png'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    }
+  ]
+});
+
 const isMobile = ref(window?.innerWidth < 768);
 const MOBILE_BREAKPOINT = 768;
 

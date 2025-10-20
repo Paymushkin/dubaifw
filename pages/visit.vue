@@ -105,8 +105,16 @@ useHead({
       content: 'Register to visit Emirates Fashion Week Dubai 2025. Get your invitation and join us for an unforgettable fashion experience.'
     },
     {
+      property: 'og:image',
+      content: 'https://emiratesfashionweeks.com/seo-poster.png'
+    },
+    {
       property: 'og:type',
       content: 'website'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
     }
   ]
 })
@@ -143,3 +151,4 @@ useHead({
   animation: spin-slow 3s linear infinite;
 }
 </style>
+

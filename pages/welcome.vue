@@ -149,7 +149,7 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <!-- 2D Map -->
               <div class="border border-gray-300 rounded-lg p-4">
-                <h3 class="text-lg md:text-xl font-bold mb-4">2D View</h3>
+                <h3 class="text-lg md:text-xl font-bold mb-4">Google Maps</h3>
                 <div class="w-full">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28905.594122284634!2d55.128635593056764!3d25.095115196678794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6b0072bb3c61%3A0x3a456f0a9996fc2c!2sSkylight%20Gallery!5e0!3m2!1sru!2sae!4v1757756744547!5m2!1sru!2sae" 
@@ -165,7 +165,7 @@
 
               <!-- 3D Map -->
               <div class="border border-gray-300 rounded-lg p-4">
-                <h3 class="text-lg md:text-xl font-bold mb-4">3D View</h3>
+                <h3 class="text-lg md:text-xl font-bold mb-4">Skylight Gallery Arjaan by Rotana</h3>
                 <div class="w-full">
                   <iframe 
                     src="https://www.google.com/maps/embed?pb=!4v1757756521377!6m8!1m7!1sFD00YnqiTe4Mfh-iCWTNNA!2m2!1d25.09490902264704!2d55.15351383099734!3f12.933478943500432!4f12.986052488037629!5f0.7820865974627469" 
@@ -568,6 +568,41 @@ import { computed, ref, onMounted, watch } from '#imports';
 import BaseButton from '@/components/ui/BaseButton.vue';
 import Image1 from '@/assets/image/welcome/1.webp';
 import { useDesigners } from '~/composables/useDesigners';
+
+// SEO мета-теги
+useHead({
+  title: 'Welcome - Emirates Fashion Week Dubai 2025',
+  meta: [
+    {
+      name: 'description',
+      content: 'Welcome to Emirates Fashion Week Dubai 2025. Your exclusive invitation to join us for three remarkable days of style, beauty, and meaningful connections.'
+    },
+    {
+      name: 'keywords',
+      content: 'Emirates Fashion Week Welcome, Dubai Fashion Event, Fashion Week Invitation, Guest Welcome Dubai'
+    },
+    {
+      property: 'og:title',
+      content: 'Welcome - Emirates Fashion Week Dubai 2025'
+    },
+    {
+      property: 'og:description',
+      content: 'Welcome to Emirates Fashion Week Dubai 2025. Your exclusive invitation to join us for three remarkable days of style, beauty, and meaningful connections.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://emiratesfashionweeks.com/seo-poster.png'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    }
+  ]
+});
 
 // Get route and router
 const route = useRoute();

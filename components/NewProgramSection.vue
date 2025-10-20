@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto">
     <div class="flex justify-between md:items-center gap-8 md:mb-[50px] mb-4 max-w-[1200px]">
-      <h2 id="spring-summer-2026" class="text-xl md:text-3xl xl:text-4xl scroll-mt-[120px] md:scroll-mt-[100px]">
+      <h2 id="spring-summer-2026" data-nosnippet class="text-xl md:text-3xl xl:text-4xl scroll-mt-[120px] md:scroll-mt-[100px]">
         <!-- debug: log click and bounding rect before/after scroll -->
         <a href="#spring-summer-2026" class="hover:opacity-80 transition-opacity" @click="logAnchorDebug('spring-summer-2026')">14th Spring Summer 2026</a>
       </h2>

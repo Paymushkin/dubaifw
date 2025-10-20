@@ -1,10 +1,10 @@
 import process from 'node:process';globalThis._importMeta_={url:import.meta.url,env:process.env};export { c as closePrerenderer, l as localFetch } from './chunks/nitro/nitro.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/h3/dist/index.mjs';
+import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ufo/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/destr/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/hookable/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ofetch/dist/node.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/node-mock-http/dist/index.mjs';
-import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ufo/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/nitropack/node_modules/unstorage/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/nuxt/node_modules/unstorage/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/nuxt/node_modules/unstorage/drivers/fs.mjs';
@@ -16,6 +16,7 @@ import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/d
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/scule/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/unctx/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/radix3/dist/index.mjs';
+import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/vue/index.mjs';
 import 'node:fs';
 import 'node:url';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/pathe/dist/index.mjs';

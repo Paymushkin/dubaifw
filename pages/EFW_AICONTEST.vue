@@ -214,7 +214,7 @@
              <!-- Навигационные стрелки -->
              <button 
                v-if="instagramReels.length > visibleReels"
-               @click="prevReel"
+               @click="stopAutoPlay(); prevReel()"
                class="absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-4 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 z-10"
              >
                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -224,7 +224,7 @@
              
              <button 
                v-if="instagramReels.length > visibleReels"
-               @click="nextReel"
+               @click="stopAutoPlay(); nextReel()"
                class="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-4 bg-white/80 hover:bg-white rounded-full p-2 shadow-lg transition-all duration-200 z-10"
              >
                <svg class="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -237,7 +237,7 @@
                <button
                  v-for="(page, index) in totalPages"
                  :key="index"
-                 @click="goToPage(index)"
+                 @click="stopAutoPlay(); goToPage(index)"
                  class="w-3 h-3 rounded-full transition-all duration-200"
                  :class="index === currentPage ? 'bg-gray-800' : 'bg-gray-300 hover:bg-gray-400'"
                ></button>
@@ -336,6 +336,7 @@ const instagramReels = ref([])
 const currentReelIndex = ref(0)
 const visibleReels = ref(1)
 const currentPage = ref(0)
+const autoPlayInterval = ref(null)
 
 
 // Создаем массив URL для галереи
@@ -495,6 +496,22 @@ const goToPage = (pageIndex) => {
   currentReelIndex.value = pageIndex * visibleReels.value
 }
 
+// Функции для автоплея
+const startAutoPlay = () => {
+  if (instagramReels.value.length > visibleReels.value) {
+    autoPlayInterval.value = setInterval(() => {
+      nextReel()
+    }, 5000) // 5 секунд
+  }
+}
+
+const stopAutoPlay = () => {
+  if (autoPlayInterval.value) {
+    clearInterval(autoPlayInterval.value)
+    autoPlayInterval.value = null
+  }
+}
+
 
 
 // Watcher для обработки embed при изменении данных
@@ -508,6 +525,9 @@ watch(instagramReels, async (newReels) => {
       }
       
     }, 100);
+    
+    // Запускаем автоплей после загрузки данных
+    startAutoPlay();
   }
 }, { deep: true });
 
@@ -548,6 +568,9 @@ onUnmounted(() => {
   if (typeof window !== 'undefined') {
     window.removeEventListener('resize', updateVisibleReels);
   }
+  
+  // Останавливаем автоплей
+  stopAutoPlay();
 });
 </script>
 

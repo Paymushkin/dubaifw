@@ -1,192 +1,281 @@
 <template>
   <section class="md:mb-[76px] mb-[56px]">
-    <h2 id="faces-of-efw" class="text-xl md:text-3xl xl:text-4xl text-left mb-8"><a href="#faces-of-efw" class="hover:opacity-80 transition-opacity">FACES OF EFW</a></h2>
-    
-    <!-- Мобильная версия: горизонтальный скролл -->
-    <div class="block md:hidden">
-      <div class="overflow-x-auto hide-scrollbar -mx-4">
-        <div class="flex gap-4 px-4 pb-4">
-          <!-- Первое фото: Olga Khayrullova -->
-          <div class="flex-shrink-0 w-80">
-            <div class="bg-white rounded-2xl p-6 shadow-lg h-full">
-              <img 
-                src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-3.png" 
-                alt="Olga Khayrullova"
-                class="w-full h-auto rounded-lg object-cover mb-4"
-              >
-              <h3 class="text-lg font-semibold mb-4 text-center">Olga Khayrullova</h3>
-              <div class="flex flex-wrap gap-2">
-                <a 
-                  href="https://disk.yandex.ru/d/H1mkiuK2ZGnGtg" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Olga Gallery 1
-                </a>
-                <a 
-                  href="https://disk.yandex.ru/d/OyDVLRK3xh4XGA" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Olga Gallery 2
-                </a>
-                <a 
-                  href="https://disk.yandex.ru/d/i8UrwKqzfvP87Q" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Olga Gallery 3
-                </a>
-                <a 
-                  href="https://disk.yandex.ru/d/xcI2edSjve_VcQ" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Olga Gallery 4
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Второе фото: Khalimova Liza -->
-          <div class="flex-shrink-0 w-80">
-            <div class="bg-white rounded-2xl p-6 shadow-lg h-full">
-              <img 
-                src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-2.png" 
-                alt="Khalimova Liza"
-                class="w-full h-auto rounded-lg object-cover mb-4"
-              >
-              <h3 class="text-lg font-semibold mb-4 text-center">Khalimova Liza</h3>
-              <div class="flex flex-wrap gap-2">
-                <a 
-                  href="https://disk.yandex.ru/a/O-Yaq82vmplm-g" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Liza Gallery
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Третье фото: Olga Baltrukevica -->
-          <div class="flex-shrink-0 w-80">
-            <div class="bg-white rounded-2xl p-6 shadow-lg h-full">
-              <img 
-                src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-1.png" 
-                alt="Olga Baltrukevica"
-                class="w-full h-auto rounded-lg object-cover mb-4"
-              >
-              <h3 class="text-lg font-semibold mb-4 text-center">Olga Baltrukevica</h3>
-              <div class="flex flex-wrap gap-2">
-                <a 
-                  href="https://failiem.lv/u/trcyc4awyu" 
-                  target="_blank"
-                  class="text-blue-600 hover:text-blue-800 underline"
-                >
-                  Olga Gallery
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="flex justify-between items-center mb-8 xl:mb-[75px]">
+      <h2 id="faces-of-efw" data-nosnippet class="text-xl md:text-3xl xl:text-4xl">Face of Emirates Fashion Week</h2>
+      <div class="flex items-center gap-4">
+        <button 
+          @click="handlePrev"
+          class="w-6 h-6 md:w-10 md:h-10 flex items-center justify-center"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19L8 12L15 5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <button 
+          @click="handleNext"
+          class="w-6 h-6 md:w-10 md:h-10 flex items-center justify-center"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
       </div>
     </div>
-
-    <!-- Десктопная и планшетная версия: сетка на всю ширину -->
-    <div class="hidden md:block">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <!-- Первое фото: Olga Khayrullova -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg">
-          <img 
-            src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-3.png" 
-            alt="Olga Khayrullova"
-            class="w-full h-auto rounded-lg object-cover mb-4"
-          >
-          <h3 class="text-lg font-semibold mb-4 text-center">Olga Khayrullova</h3>
-          <div class="flex flex-wrap gap-2">
-            <a 
-              href="https://disk.yandex.ru/d/H1mkiuK2ZGnGtg" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
+    
+    <div class="overflow-x-auto hide-scrollbar -mx-4 md:mx-0">
+      <swiper
+        :modules="[Navigation, Pagination]"
+        :slides-per-view="1.2"
+        :space-between="16"
+        :navigation="false"
+        :autoplay="{
+          // delay: 5000,
+          disableOnInteraction: false
+        }"
+        :pagination="false"
+        :breakpoints="{
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          }
+        }"
+        @swiper="onSwiper"
+        @slideChange="onSlideChange"
+        class="relative pb-12 px-4 md:px-0"
+      >
+        <swiper-slide v-for="(person, index) in facesData" :key="index">
+          <div class="bg-white rounded-2xl h-full relative overflow-hidden">
+            <img 
+              :src="person.image" 
+              :alt="person.name"
+              class="w-full aspect-[4/5] rounded-lg object-cover"
+              :loading="index === 0 ? 'eager' : 'lazy'"
             >
-              Olga Gallery 1
-            </a>
-            <a 
-              href="https://disk.yandex.ru/d/OyDVLRK3xh4XGA" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
-            >
-              Olga Gallery 2
-            </a>
-            <a 
-              href="https://disk.yandex.ru/d/i8UrwKqzfvP87Q" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
-            >
-              Olga Gallery 3
-            </a>
-            <a 
-              href="https://disk.yandex.ru/d/xcI2edSjve_VcQ" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
-            >
-              Olga Gallery 4
-            </a>
+            <!-- Диагональная ленточка ICON of EFW -->
+            <div v-if="person.icon" class="icon-ribbon">
+              <span class="icon-ribbon__content">
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                ICON of EFW
+              </span>
+            </div>
+            <div class="p-4">
+              <h3 class="text-lg font-semibold mb-4 text-center">{{ person.name }}</h3>
+              <div class="flex flex-wrap gap-1 md:gap-2 justify-center">
+                <a 
+                  v-for="(link, linkIndex) in person.links" 
+                  :key="linkIndex"
+                  :href="link.url" 
+                  target="_blank"
+                  class="text-xs md:text-sm text-blue-600 hover:text-blue-800 underline"
+                >
+                  {{ link.text }}
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
+        </swiper-slide>
 
-        <!-- Второе фото: Khalimova Liza -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg">
-          <img 
-            src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-2.png" 
-            alt="Khalimova Liza"
-            class="w-full h-auto rounded-lg object-cover mb-4"
-          >
-          <h3 class="text-lg font-semibold mb-4 text-center">Khalimova Liza</h3>
-          <div class="flex flex-wrap gap-2">
-            <a 
-              href="https://disk.yandex.ru/a/O-Yaq82vmplm-g" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
-            >
-              Liza Gallery
-            </a>
-          </div>
-        </div>
-
-        <!-- Третье фото: Olga Baltrukevica -->
-        <div class="bg-white rounded-2xl p-6 shadow-lg">
-          <img 
-            src="https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-1.png" 
-            alt="Olga Baltrukevica"
-            class="w-full h-auto rounded-lg object-cover mb-4"
-          >
-          <h3 class="text-lg font-semibold mb-4 text-center">Olga Baltrukevica</h3>
-          <div class="flex flex-wrap gap-2">
-            <a 
-              href="https://failiem.lv/u/trcyc4awyu" 
-              target="_blank"
-              class="text-blue-600 hover:text-blue-800 underline"
-            >
-              Olga Gallery
-            </a>
-          </div>
-        </div>
-      </div>
+      </swiper>
     </div>
   </section>
 </template>
 
+<script setup>
+import { onMounted, onUnmounted, ref } from 'vue';
+import { Swiper, SwiperSlide } from 'swiper/vue';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+
+// Данные о людях
+const facesData = ref([
+  {
+    name: 'Olga Khayrullova',
+    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-3.png',
+    icon: true,
+    links: [
+      { text: 'Olga Gallery 1', url: 'https://disk.yandex.ru/d/H1mkiuK2ZGnGtg' },
+      { text: 'Olga Gallery 2', url: 'https://disk.yandex.ru/d/OyDVLRK3xh4XGA' },
+      { text: 'Olga Gallery 3', url: 'https://disk.yandex.ru/d/i8UrwKqzfvP87Q' },
+      { text: 'Olga Gallery 4', url: 'https://disk.yandex.ru/d/xcI2edSjve_VcQ' }
+    ]
+  },
+  {
+    name: 'Khalimova Liza',
+    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-2.png',
+    icon: true,
+    links: [
+      { text: 'Liza Gallery', url: 'https://disk.yandex.ru/a/O-Yaq82vmplm-g' }
+    ]
+  },
+  {
+    name: 'Olga Baltrukevica',
+    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-1.png',
+    icon: true,
+    links: [
+      { text: 'Olga Gallery', url: 'https://failiem.lv/u/trcyc4awyu' }
+    ]
+  },
+  {
+    name: 'Ekaterina Potanina',
+    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-4.png',
+    links: [
+      { text: 'Instagram', url: 'https://www.instagram.com/potanina_ea/' }
+    ]
+  },
+  {
+    name: 'Katerina Melikhova',
+    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-5.png',
+    links: [
+      { text: 'Instagram', url: 'https://www.instagram.com/katya_katerinina?igsh=YTZ5MnBodnN2dm5v' }
+    ]
+  }
+])
+
+const swiperInstance = ref(null);
+
+const onSwiper = (swiper) => {
+  swiperInstance.value = swiper;
+};
+
+const handlePrev = () => {
+  swiperInstance.value?.slidePrev();
+};
+
+const handleNext = () => {
+  swiperInstance.value?.slideNext();
+};
+
+const onSlideChange = () => {
+  // Можно добавить логику при смене слайда
+};
+</script>
+
 <style scoped>
-/* Скрытие полосы прокрутки для горизонтального скролла */
+:deep(.swiper) {
+  padding-bottom: 40px !important;
+  position: relative;
+  overflow: hidden !important;
+}
+
+:deep(.swiper-wrapper) {
+  align-items: stretch;
+}
+
+:deep(.swiper-slide) {
+  height: auto;
+}
+
+/* Стили для навигации */
+:deep(.swiper-button-prev),
+:deep(.swiper-button-next) {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex !important;
+}
+
+:deep(.swiper-button-prev::after),
+:deep(.swiper-button-next::after) {
+  font-size: 20px;
+}
+
+@media (max-width: 767px) {
+  button {
+    display: none;
+  }
+  
+  :deep(.swiper) {
+    padding: 0 !important;
+    overflow: visible !important;
+  }
+  
+  :deep(.swiper-wrapper) {
+    overflow: visible !important;
+  }
+  
+  :deep(.swiper-slide) {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+  }
+  
+  :deep(.swiper-slide-next) {
+    opacity: 0.6;
+  }
+  
+  :deep(.swiper-slide-prev) {
+    opacity: 0.6;
+  }
+}
+
+
+button {
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  opacity: 0.5;
+}
+
+/* Скрытие скроллбара */
 .hide-scrollbar {
+  -ms-overflow-style: none;  /* IE и Edge */
   scrollbar-width: none;  /* Firefox */
-  -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
 
 .hide-scrollbar::-webkit-scrollbar {
-  display: none;  /* Safari and Chrome */
+  display: none; /* Chrome, Safari и Opera */
+}
+
+/* Диагональная ленточка ICON of EFW */
+.icon-ribbon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+}
+
+.icon-ribbon__content {
+  position: absolute;
+  top: 65px; /* равен 4 (tailwind top-4) */
+  left: -25px; /* смещение, чтобы центрировалось по диагонали */
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 4px 20px;
+  background: #FBBF24; /* tailwind bg-yellow-400 */
+  color: #111827; /* почти черный для контраста */
+  font-weight: 700;
+  font-size: 10px;
+  white-space: nowrap; /* не переносить текст */
+  line-height: 1;      /* компактная высота строки */
+  border-radius: 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transform: rotate(-45deg);
+  transform-origin: left top;
+}
+
+@media (min-width: 768px) {
+  /* .icon-ribbon__content {
+    top: 18px;
+    left: -56px;
+    font-size: 13px;
+    padding: 6px 14px;
+  } */
 }
 </style>
-

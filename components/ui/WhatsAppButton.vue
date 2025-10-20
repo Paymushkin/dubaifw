@@ -26,5 +26,12 @@ const props = defineProps({
   }
 })
 
-const whatsappLink = computed(() => `https://wa.me/${props.phoneNumber}`)
+const whatsappLink = computed(() => {
+  // Если передан полный URL, используем его как есть
+  if (props.phoneNumber.startsWith('http')) {
+    return props.phoneNumber
+  }
+  // Иначе добавляем wa.me/ к номеру телефона
+  return `https://wa.me/${props.phoneNumber}`
+})
 </script> 

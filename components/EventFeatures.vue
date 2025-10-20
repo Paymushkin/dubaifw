@@ -6,7 +6,7 @@
     <!-- Заголовок с настраиваемым цветом фона -->
     <div v-if="data.title" class="mb-8 md:10 lg:mb-12">
       <div class="md:flex md:items-center">
-        <h2 :id="data.id || ''" class="text-2xl md:text-3xl lg:text-4xl">
+        <h2 :id="data.id || ''" data-nosnippet class="text-2xl md:text-3xl lg:text-4xl">
           <a :href="data.id ? `#${data.id}` : ''" class="hover:opacity-80 transition-opacity" v-html="data.title || ''"></a>
         </h2>
         <a

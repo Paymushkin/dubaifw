@@ -44,7 +44,7 @@
     <!-- WhatsApp кнопка для вопросов -->
     <div class="mt-8 text-center">
       <WhatsAppButton 
-        phone-number="971585753302"
+        phone-number="https://wa.me/message/2F4O6ZT7YH5RG1"
         text="Ask questions on WhatsApp"
       />
     </div>

@@ -1,7 +1,7 @@
 <template>
   <div class="image-carousel-container">
     <div class="carousel-header flex justify-between items-center mb-6">
-      <h2 id="economy-dubai" class="text-2xl md:text-3xl lg:text-4xl"><a href="#economy-dubai" class="hover:opacity-80 transition-opacity">{{ title }}</a></h2>
+      <h2 id="economy-dubai" data-nosnippet class="text-2xl md:text-3xl lg:text-4xl">{{ title }}</h2>
       <div class="flex relative items-center gap-4">
         <div 
           @click="swiperRef?.slidePrev()"

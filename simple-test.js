@@ -48,3 +48,5 @@ console.log(`\nRECOMМENDED в результате: ${recomмended ? 'ДА' : '
 if (recomмended) {
   console.log('Компания:', recomмended.companyName);
 }
+
+

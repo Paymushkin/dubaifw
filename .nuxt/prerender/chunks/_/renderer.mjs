@@ -1,11 +1,11 @@
 import { createRenderer, getRequestDependencies, getPreloadLinks, getPrefetchLinks } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/vue-bundle-renderer/dist/runtime.mjs';
 import { getQuery, createError, getResponseStatusText, getResponseStatus } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/h3/dist/index.mjs';
-import { u as useRuntimeConfig, d as defineRenderHandler, g as getRouteRules, a as useNitroApp } from '../nitro/nitro.mjs';
-import { joinRelativeURL } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ufo/dist/index.mjs';
+import { b as buildAssetsURL, u as useRuntimeConfig, d as defineRenderHandler, p as publicAssetsURL, g as getRouteRules, a as useNitroApp } from '../nitro/nitro.mjs';
 import { createHead as createHead$1, propsToString, renderSSRHead } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/unhead/dist/server.mjs';
 import { stringify, uneval } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/devalue/index.js';
 import { toValue, isRef } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/vue/index.mjs';
 import { DeprecationsPlugin, PromisesPlugin, TemplateParamsPlugin, AliasSortingPlugin } from 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/unhead/dist/plugins.mjs';
+import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ufo/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/destr/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/hookable/dist/index.mjs';
 import 'file:///Users/paymei/Documents/Development/github/dubaifw/node_modules/ofetch/dist/node.mjs';
@@ -50,7 +50,7 @@ function createHead(options = {}) {
   return head;
 }
 
-const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v=3"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png?v=3"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png?v=3"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png?v=3"},{"rel":"manifest","href":"/site.webmanifest"}],"style":[],"script":[],"noscript":[]};
+const appHead = {"meta":[{"name":"viewport","content":"width=device-width, initial-scale=1"},{"charset":"utf-8"}],"link":[{"rel":"icon","type":"image/x-icon","href":"/favicon.ico?v=3"},{"rel":"apple-touch-icon","sizes":"180x180","href":"/apple-touch-icon.png?v=3"},{"rel":"icon","type":"image/png","sizes":"32x32","href":"/favicon-32x32.png?v=3"},{"rel":"icon","type":"image/png","sizes":"16x16","href":"/favicon-16x16.png?v=3"},{"rel":"manifest","href":"/site.webmanifest"}],"style":[],"script":[{"src":"https://www.googletagmanager.com/gtag/js?id=G-93881479ZC","async":true},{"type":"text/javascript","innerHTML":"window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-93881479ZC');"}],"noscript":[]};
 
 const appRootTag = "div";
 
@@ -61,18 +61,6 @@ const appTeleportTag = "div";
 const appTeleportAttrs = {"id":"teleports"};
 
 const appId = "nuxt-app";
-
-function buildAssetsDir() {
-  return useRuntimeConfig().app.buildAssetsDir;
-}
-function buildAssetsURL(...path) {
-  return joinRelativeURL(publicAssetsURL(), buildAssetsDir(), ...path);
-}
-function publicAssetsURL(...path) {
-  const app = useRuntimeConfig().app;
-  const publicBase = app.cdnURL || app.baseURL;
-  return path.length ? joinRelativeURL(publicBase, ...path) : publicBase;
-}
 
 const APP_ROOT_OPEN_TAG = `<${appRootTag}${propsToString(appRootAttrs)}>`;
 const APP_ROOT_CLOSE_TAG = `</${appRootTag}>`;

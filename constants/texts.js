@@ -1,9 +1,9 @@
 export const marqueeText1 = 'EMIRATES FASHION WEEK / DUBAI 8-11 NOVEMBER 2025'
 export const marqueeText2 = 'This event is organized as the final qualification showcase for the Diamond Models school'
 
-export const address = 'Dubai, Shams Media City 104, '
+export const address = 'Dubai, Shams Media City 104, M&V LLC'
 export const phone = ['+971569534134', '+971 56 953 4134']
-export const email = 'fashionweekemirates@gmail.com'
+export const email = 'team@emiratesfashionweeks.com'
 export const instagram = 'https://www.instagram.com/emirates_fashionweek'
 export const youtube = 'https://www.youtube.com/@emiratesfashionweek'
 export const hashtag = ['#JOINDUBAI', 'https://www.instagram.com/explore/search/keyword/?q=%23joindubai']

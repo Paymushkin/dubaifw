@@ -329,6 +329,41 @@ import { useRoute } from '#imports';
 import BaseButton from '@/components/ui/BaseButton.vue';
 import Image1 from '@/assets/image/welcome/1.webp';
 
+// SEO мета-теги
+useHead({
+  title: 'Guest List - Emirates Fashion Week Dubai 2025',
+  meta: [
+    {
+      name: 'description',
+      content: 'You are on the Emirates Fashion Week Dubai 2025 guest list. Join us for three remarkable days of style, beauty, and meaningful connections.'
+    },
+    {
+      name: 'keywords',
+      content: 'Emirates Fashion Week Guest List, Dubai Fashion Event, Fashion Week Invitation, Guest Pass Dubai'
+    },
+    {
+      property: 'og:title',
+      content: 'Guest List - Emirates Fashion Week Dubai 2025'
+    },
+    {
+      property: 'og:description',
+      content: 'You are on the Emirates Fashion Week Dubai 2025 guest list. Join us for three remarkable days of style, beauty, and meaningful connections.'
+    },
+    {
+      property: 'og:image',
+      content: 'https://emiratesfashionweeks.com/seo-poster.png'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    }
+  ]
+});
+
 // Get guest name from URL parameter
 const route = useRoute();
 const guestName = computed(() => {

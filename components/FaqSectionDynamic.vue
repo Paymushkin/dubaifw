@@ -4,7 +4,7 @@
     { 'py-20 md:py-[100px]': !standalone },
     { 'py-[60px] md:py-[120px]': standalone }
   ]">
-    <h2 id="faq" class="text-xl md:text-3xl xl:text-4xl mb-8 md:mb-12">
+  <h2 id="faq" data-nosnippet class="text-xl md:text-3xl xl:text-4xl mb-8 md:mb-12">
       <template v-if="standalone">
         <a href="#faq" class="hover:opacity-80 transition-opacity">Frequently Asked Questions</a>
       </template>

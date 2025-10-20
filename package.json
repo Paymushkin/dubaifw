@@ -38,6 +38,7 @@
     "eslint-plugin-prettier": "^5.2.3",
     "gh-pages": "^6.3.0",
     "netlify-cli": "^17.23.0",
+    "nuxt-simple-sitemap": "^4.4.1",
     "postcss-import": "^16.1.0",
     "prettier": "^3.5.1"
   },

@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto pb-16">
     <div class="flex justify-between items-center mb-8 xl:mb-[75px]">
-      <h2 id="designers" class="text-xl md:text-3xl xl:text-4xl"><a href="#designers" class="hover:opacity-80 transition-opacity">DESIGNERS</a></h2>
+      <h2 id="designers" data-nosnippet class="text-xl md:text-3xl xl:text-4xl">DESIGNERS</h2>
       <div class="flex items-center gap-4">
         <button 
           @click="handlePrev"
