@@ -13,10 +13,26 @@
     <meta property="og:site_name" content="Emirates Fashion Week" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta http-equiv="refresh" content="2; url=https://emiratesfashionweeks.com/?to=/request/" />
+    <!-- Meta refresh отключен для локальной разработки -->
   </head>
   <body>
-    <script>window.location.replace('https://emiratesfashionweeks.com/?to=/request/');</script>
+                                <script>
+      (function(){
+        // Определяем базовый URL: все что НЕ emiratesfashionweeks.com = локальная разработка
+        var isLocal = !window.location.hostname.includes('emiratesfashionweeks.com');
+        
+        // При локальной разработке не редиректим - показываем статический HTML
+        if (isLocal) {
+          return; // Не делаем редирект, показываем статический HTML
+        }
+        
+        // На продакшене редиректим на домен
+        var qs = window.location.search || '';
+        var target = '/request' + qs;
+        var url = 'https://emiratesfashionweeks.com' + target;
+        window.location.replace(url);
+      })();
+    </script>
   </body>
 </html>
 
