@@ -8,15 +8,30 @@
     <meta name="description" content="List of approved companies participating in Emirates Fashion Week Dubai 2025." />
     <meta property="og:title" content="Approved Companies - Emirates Fashion Week Dubai 2025" />
     <meta property="og:description" content="List of approved companies participating in Emirates Fashion Week Dubai 2025." />
-    <meta property="og:image" content="https://emiratesfashionweeks.com/seo-poster.png" />
+    <meta property="og:image" content="https://emiratesfashionweeks.com/seo-poster-wa.png?v=2" />
     <meta property="og:url" content="https://emiratesfashionweeks.com/approved/" />
     <meta property="og:site_name" content="Emirates Fashion Week" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta http-equiv="refresh" content="2; url=https://emiratesfashionweeks.com/?to=/approved/" />
+    <!-- Meta refresh отключен для локальной разработки -->
   </head>
-  <body>
-    <script>window.location.replace('https://emiratesfashionweeks.com/?to=/approved/');</script>
+  <body>        <script>
+      (function(){
+        // Определяем базовый URL: все что НЕ emiratesfashionweeks.com = локальная разработка
+        var isLocal = !window.location.hostname.includes('emiratesfashionweeks.com');
+        
+        // При локальной разработке не редиректим - показываем статический HTML
+        if (isLocal) {
+          return; // Не делаем редирект, показываем статический HTML
+        }
+        
+        // На продакшене редиректим на корень с параметром to
+        var qs = window.location.search || '';
+        var target = '/approved' + qs;
+        var url = 'https://emiratesfashionweeks.com/?to=' + encodeURIComponent(target);
+        window.location.replace(url);
+      })();
+    </script>
   </body>
 </html>
 

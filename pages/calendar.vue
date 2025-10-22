@@ -1,102 +1,112 @@
 <template>
-  <div class="min-h-screen bg-black flex items-center justify-center">
+  <div class="min-h-screen bg-black flex items-center justify-center py-8 px-4">
     <AppSeo
       title="Emirates Fashion Week Calendar - Subscribe to Events"
       description="Subscribe to Emirates Fashion Week calendar to stay updated with all fashion events and shows in Dubai 2025."
       keywords="Emirates Fashion Week, Dubai Fashion, Calendar, Events, Fashion Shows, Dubai 2025"
     />
     
-    <div class="text-center">
-      <!-- Анимированный лоадер -->
-      <div class="mb-8">
+    <div class="text-center max-w-md mx-auto">
+      <!-- Календарь иконка -->
+      <div class="mb-6 md:mb-8">
         <div class="inline-block relative">
           <!-- Календарь иконка -->
-          <div class="w-16 h-16 border-4 border-gray-300 border-t-white rounded-lg animate-spin"></div>
-          
-          <!-- Внутренние элементы календаря -->
-          <div class="absolute top-2 left-2 w-12 h-12 border-2 border-gray-400 border-t-gray-100 rounded-lg animate-pulse"></div>
-          
-          <!-- Центральная точка -->
-          <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-white rounded-full animate-bounce"></div>
+          <div class="w-12 h-12 md:w-16 md:h-16 border-4 border-white rounded-lg flex items-center justify-center">
+            <div class="w-8 h-8 md:w-12 md:h-12 border-2 border-white rounded-lg flex items-center justify-center">
+              <div class="w-1.5 h-1.5 md:w-2 md:h-2 bg-white rounded-full"></div>
+            </div>
+          </div>
         </div>
       </div>
       
-      <!-- Текст загрузки -->
-      <div class="text-white">
-        <h1 class="text-2xl md:text-3xl font-bold mb-4 animate-pulse">
-          Downloading Emirates Fashion Week Calendar
+      <!-- Заголовок и описание -->
+      <div class="text-white mb-6 md:mb-8">
+        <h1 class="text-xl md:text-2xl lg:text-3xl font-bold mb-3 md:mb-4">
+          Emirates Fashion Week Calendar
         </h1>
-        <p class="text-gray-300 text-lg animate-bounce">
-          Preparing calendar file download...
+        <p class="text-gray-300 text-base md:text-lg mb-2">
+          Stay updated with all fashion events and shows
         </p>
-        <p class="text-gray-400 text-sm mt-2">
-          You will be redirected to the main page after download
+        <p class="text-gray-400 text-sm">
+          Subscribe to get notifications about upcoming events
         </p>
       </div>
       
-      <!-- Прогресс бар -->
-      <div class="mt-8 w-64 mx-auto">
-        <div class="bg-gray-700 rounded-full h-2 overflow-hidden">
-          <div 
-            class="bg-white h-full rounded-full transition-all duration-1000 ease-linear"
-            :style="{ width: progress + '%' }"
-          ></div>
-        </div>
+      <!-- Кнопка подписки -->
+      <div v-if="showButton" class="mb-6">
+        <button 
+          @click="subscribeToCalendar"
+          class="bg-white text-black px-6 py-3 md:px-8 md:py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 text-base md:text-lg"
+        >
+          Subscribe to Calendar
+        </button>
       </div>
       
-      <!-- Счетчик -->
-      <div class="mt-4 text-white text-sm">
-        {{ Math.round(progress) }}%
+      <!-- Кнопка для перехода на главную -->
+      <div class="mt-4">
+        <button 
+          @click="goToHome"
+          class="bg-transparent border-2 border-white text-white px-4 py-2 md:px-6 md:py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors duration-300 text-sm md:text-base"
+        >
+          Go to Main Page
+        </button>
       </div>
     </div>
   </div>
 </template>
 
+
 <script setup>
 import { ref, onMounted } from 'vue'
 
-const progress = ref(0)
-const targetUrl = 'https://calendar.google.com/calendar/ical/a48ce6b68320071674bb11016e1486a03cc4e7c0a452cfc3b34503e26963c22c%40group.calendar.google.com/public/basic.ics'
+const showButton = ref(false)
 
-// Анимация прогресс бара
-const animateProgress = () => {
-  const duration = 1000 // 1 секунда
-  const steps = 100
-  const stepTime = duration / steps
+// Calendar ID
+const calendarId = 'a48ce6b68320071674bb11016e1486a03cc4e7c0a452cfc3b34503e26963c22c@group.calendar.google.com'
+
+// Определяем URL в зависимости от платформы
+const getCalendarUrl = () => {
+  const userAgent = navigator.userAgent.toLowerCase()
   
-  let currentStep = 0
+  // Для iOS/macOS используем webcal (подписка)
+  if (userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('mac')) {
+    return `webcal://calendar.google.com/calendar/ical/${encodeURIComponent(calendarId)}/public/basic.ics`
+  }
   
-  const timer = setInterval(() => {
-    currentStep++
-    progress.value = currentStep
-    
-    if (currentStep >= steps) {
-      clearInterval(timer)
-    }
-  }, stepTime)
+  // Для Android и остальных платформ используем Google Calendar subscription
+  return `https://calendar.google.com/calendar/r?cid=${encodeURIComponent(calendarId)}`
 }
 
-// Скачивание файла и редирект на главную
+const targetUrl = getCalendarUrl()
+
+// Определяем, является ли устройство iOS
+const isIOS = () => {
+  const userAgent = navigator.userAgent.toLowerCase()
+  return userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('mac')
+}
+
+// Автоматическое открытие для iOS
 onMounted(() => {
-  // Запускаем анимацию прогресса
-  animateProgress()
+  // Показываем кнопку для всех платформ
+  showButton.value = true
   
-  // Скачиваем файл календаря через 1 секунду
-  setTimeout(() => {
-    // Создаем временную ссылку для скачивания
-    const link = document.createElement('a')
-    link.href = targetUrl
-    link.download = 'emirates-fashion-week-calendar.ics'
-    document.body.appendChild(link)
-    link.click()
-    document.body.removeChild(link)
-    
-    // Перенаправляем на главную страницу через 2 секунды после скачивания
+  if (isIOS()) {
+    // Для iOS также открываем автоматически через небольшую задержку
     setTimeout(() => {
-      window.location.href = '/'
-    }, 2000)
-  }, 1000)
+      window.location.href = targetUrl
+    }, 1000)
+  }
 })
+
+// Функция для подписки на календарь
+const subscribeToCalendar = () => {
+  window.open(targetUrl, '_blank')
+}
+
+// Функция для перехода на главную
+const goToHome = () => {
+  window.location.href = '/'
+}
 
 // Мета-теги для SEO
 useHead({

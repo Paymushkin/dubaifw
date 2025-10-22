@@ -571,27 +571,27 @@ import { useDesigners } from '~/composables/useDesigners';
 
 // SEO мета-теги
 useHead({
-  title: 'Welcome - Emirates Fashion Week Dubai 2025',
+  title: 'Welcome - Emirates Fashion Week Dubai 2025 | 8-11 November | Exclusive Invitation',
   meta: [
     {
       name: 'description',
-      content: 'Welcome to Emirates Fashion Week Dubai 2025. Your exclusive invitation to join us for three remarkable days of style, beauty, and meaningful connections.'
+      content: 'Welcome to Emirates Fashion Week Dubai 2025. Join us on 8-11 November for three remarkable days of style, beauty, and meaningful connections. Your exclusive invitation to the 14th Season Spring/Summer 26.'
     },
     {
       name: 'keywords',
-      content: 'Emirates Fashion Week Welcome, Dubai Fashion Event, Fashion Week Invitation, Guest Welcome Dubai'
+      content: 'Emirates Fashion Week Welcome, Dubai Fashion Event 2025, Fashion Week Invitation November, Guest Welcome Dubai, Spring Summer 26, Fashion Show Dubai'
     },
     {
       property: 'og:title',
-      content: 'Welcome - Emirates Fashion Week Dubai 2025'
+      content: 'Welcome - Emirates Fashion Week Dubai 2025 | 8-11 November | Exclusive Invitation'
     },
     {
       property: 'og:description',
-      content: 'Welcome to Emirates Fashion Week Dubai 2025. Your exclusive invitation to join us for three remarkable days of style, beauty, and meaningful connections.'
+      content: 'Welcome to Emirates Fashion Week Dubai 2025. Join us on 8-11 November for three remarkable days of style, beauty, and meaningful connections. Your exclusive invitation to the 14th Season Spring/Summer 26.'
     },
     {
       property: 'og:image',
-      content: 'https://emiratesfashionweeks.com/seo-poster.png'
+      content: 'https://emiratesfashionweeks.com/seo-poster-wa.png?v=2'
     },
     {
       property: 'og:type',

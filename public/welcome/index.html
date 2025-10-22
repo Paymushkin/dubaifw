@@ -3,21 +3,29 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome - Emirates Fashion Week Dubai 2025</title>
+    <title>Welcome - Emirates Fashion Week Dubai 2025 | 8-11 November | Exclusive Invitation</title>
     <link rel="canonical" href="https://emiratesfashionweeks.com/welcome/" />
-    <meta name="description" content="Welcome to Emirates Fashion Week Dubai 2025." />
-    <meta property="og:title" content="Welcome - Emirates Fashion Week Dubai 2025" />
-    <meta property="og:description" content="Welcome to Emirates Fashion Week Dubai 2025." />
-    <meta property="og:image" content="https://emiratesfashionweeks.com/seo-poster.png" />
+    <meta name="description" content="Welcome to Emirates Fashion Week Dubai 2025. Join us on 8-11 November for three remarkable days of style, beauty, and meaningful connections. Your exclusive invitation to the 14th Season Spring/Summer 26." />
+    <meta property="og:title" content="Welcome - Emirates Fashion Week Dubai 2025 | 8-11 November | Exclusive Invitation" />
+    <meta property="og:description" content="Welcome to Emirates Fashion Week Dubai 2025. Join us on 8-11 November for three remarkable days of style, beauty, and meaningful connections. Your exclusive invitation to the 14th Season Spring/Summer 26." />
+    <meta property="og:image" content="https://emiratesfashionweeks.com/seo-poster-wa.png?v=2" />
     <meta property="og:url" content="https://emiratesfashionweeks.com/welcome/" />
     <meta property="og:site_name" content="Emirates Fashion Week" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta http-equiv="refresh" content="2; url=https://emiratesfashionweeks.com/?to=/welcome/" />
+    <!-- Meta refresh отключен для локальной разработки -->
   </head>
-  <body>
-    <script>
+  <body>        <script>
       (function(){
+        // Определяем базовый URL: все что НЕ emiratesfashionweeks.com = локальная разработка
+        var isLocal = !window.location.hostname.includes('emiratesfashionweeks.com');
+        
+        // При локальной разработке не редиректим - показываем статический HTML
+        if (isLocal) {
+          return; // Не делаем редирект, показываем статический HTML
+        }
+        
+        // На продакшене редиректим на корень с параметром to
         var qs = window.location.search || '';
         var target = '/welcome' + qs;
         var url = 'https://emiratesfashionweeks.com/?to=' + encodeURIComponent(target);

@@ -642,7 +642,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "b6762e63-06e0-43ed-ba91-c489835e3df5",
+    "buildId": "bef85959-6c60-4577-a1e3-bb33e1bcf10d",
     "buildAssetsDir": "assets/",
     "cdnURL": ""
   },
@@ -653,7 +653,8 @@ const _inlineRuntimeConfig = {
         "cache": false
       },
       "/": {
-        "static": true
+        "static": false,
+        "prerender": false
       },
       "/dubaifw/**": {
         "static": true
@@ -703,7 +704,7 @@ const _inlineRuntimeConfig = {
     "sitemapName": "sitemap.xml",
     "isMultiSitemap": false,
     "excludeAppSources": [],
-    "autoLastmod": false,
+    "autoLastmod": true,
     "defaultSitemapsChunkSize": 1000,
     "sortEntries": true,
     "debug": false,
@@ -733,7 +734,9 @@ const _inlineRuntimeConfig = {
       "sitemap.xml": {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
-        "defaults": {},
+        "defaults": {
+          "lastmod": "2025-10-22T10:52:21+00:00"
+        },
         "include": [],
         "exclude": [
           "/api/**",
@@ -1521,38 +1524,38 @@ const plugins = [
 const assets = {
   "/200.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-U8vYLH4/OPNYvfQsZkO1FdB71nE\"",
-    "mtime": "2025-10-20T13:06:48.142Z",
+    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
+    "mtime": "2025-10-22T10:52:24.142Z",
     "size": 2451,
     "path": "../../.output/public/200.html"
   },
   "/404.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-U8vYLH4/OPNYvfQsZkO1FdB71nE\"",
-    "mtime": "2025-10-20T13:06:48.139Z",
+    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
+    "mtime": "2025-10-22T10:52:24.142Z",
     "size": 2451,
     "path": "../../.output/public/404.html"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-U8vYLH4/OPNYvfQsZkO1FdB71nE\"",
-    "mtime": "2025-10-20T13:06:48.139Z",
+    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
+    "mtime": "2025-10-22T10:52:24.142Z",
     "size": 2451,
     "path": "../../.output/public/index.html"
+  },
+  "/EFW_AWARDS_2025_april/index.html": {
+    "type": "text/html; charset=utf-8",
+    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
+    "mtime": "2025-10-22T10:52:24.142Z",
+    "size": 2451,
+    "path": "../../.output/public/EFW_AWARDS_2025_april/index.html"
   },
   "/__sitemap__/style.xsl": {
     "type": "application/xml",
     "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
-    "mtime": "2025-10-20T13:06:48.139Z",
+    "mtime": "2025-10-22T10:52:24.142Z",
     "size": 5966,
     "path": "../../.output/public/__sitemap__/style.xsl"
-  },
-  "/EFW_AWARDS_2025_april/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"993-U8vYLH4/OPNYvfQsZkO1FdB71nE\"",
-    "mtime": "2025-10-20T13:06:48.139Z",
-    "size": 2451,
-    "path": "../../.output/public/EFW_AWARDS_2025_april/index.html"
   }
 };
 

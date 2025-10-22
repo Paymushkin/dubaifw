@@ -38,7 +38,7 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'github-pages',
     routeRules: {
-      '/': { static: true },
+      '/': { static: false, prerender: false },
       '/dubaifw/**': { static: true },
       '/offer/tr': { redirect: '/offer?tr' },
       '/sitemap.xml': { static: true },
@@ -70,6 +70,7 @@ export default defineNuxtConfig({
     }
   },
   sitemap: {
+    autoLastmod: true,
     exclude: ['/api/**'],
     urls: [
       '/',

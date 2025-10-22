@@ -33,58 +33,76 @@ const sources = [
         },
         "urls": [
             {
-                "loc": "/faq"
+                "loc": "/faq",
+                "lastmod": "2025-10-22T09:39:22.737Z"
             },
             {
-                "loc": "/team"
+                "loc": "/team",
+                "lastmod": "2025-07-30T10:29:08.791Z"
             },
             {
-                "loc": "/"
+                "loc": "/",
+                "lastmod": "2025-10-22T09:39:23.348Z"
             },
             {
-                "loc": "/offer"
+                "loc": "/offer",
+                "lastmod": "2025-10-13T16:17:39.368Z"
             },
             {
-                "loc": "/trial"
+                "loc": "/trial",
+                "lastmod": "2025-10-06T09:35:02.791Z"
             },
             {
-                "loc": "/visit"
+                "loc": "/visit",
+                "lastmod": "2025-10-22T09:39:22.595Z"
             },
             {
-                "loc": "/widget"
+                "loc": "/widget",
+                "lastmod": "2025-07-30T10:29:08.791Z"
             },
             {
-                "loc": "/gallery"
+                "loc": "/gallery",
+                "lastmod": "2025-10-22T09:39:22.790Z"
             },
             {
-                "loc": "/request"
+                "loc": "/request",
+                "lastmod": "2025-10-22T09:39:22.833Z"
             },
             {
-                "loc": "/station"
+                "loc": "/station",
+                "lastmod": "2025-07-30T10:29:08.791Z"
             },
             {
-                "loc": "/welcome"
+                "loc": "/welcome",
+                "lastmod": "2025-10-22T09:39:23.759Z"
             },
             {
-                "loc": "/approved"
+                "loc": "/approved",
+                "lastmod": "2025-09-15T14:27:20.307Z"
             },
             {
-                "loc": "/calendar"
+                "loc": "/calendar",
+                "lastmod": "2025-10-22T10:35:56.858Z"
             },
             {
-                "loc": "/features"
+                "loc": "/features",
+                "lastmod": "2025-09-26T14:53:49.771Z"
             },
             {
-                "loc": "/team_page"
+                "loc": "/team_page",
+                "lastmod": "2025-09-19T17:37:02.172Z"
             },
             {
-                "loc": "/EFW_AICONTEST"
+                "loc": "/EFW_AICONTEST",
+                "lastmod": "2025-10-22T09:39:22.930Z"
             },
             {
-                "loc": "/EFW_AWARDS_2025_april"
+                "loc": "/EFW_AWARDS_2025_april",
+                "lastmod": "2025-09-19T17:42:02.652Z"
             },
             {
-                "loc": "/offer/tr"
+                "loc": "/offer/tr",
+                "lastmod": "2025-07-30T22:14:58.074Z"
             }
         ],
         "sourceType": "app"
@@ -111,9 +129,6 @@ const sources = [
             ]
         },
         "urls": [
-            {
-                "loc": "/"
-            },
             {
                 "loc": "/EFW_AWARDS_2025_april"
             }

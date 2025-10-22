@@ -12,7 +12,7 @@ const props = defineProps({
   },
   image: {
     type: String,
-    default: 'https://emiratesfashionweeks.com/seo-poster.png'
+    default: 'https://emiratesfashionweeks.com/seo-poster-wa.png?v=2'
   },
   keywords: {
     type: String,
