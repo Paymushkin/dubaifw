@@ -15,8 +15,7 @@
     <meta name="twitter:card" content="summary_large_image" />
     <!-- Meta refresh отключен для локальной разработки -->
   </head>
-  <body>
-                                <script>
+  <body>        <script>
       (function(){
         // Определяем базовый URL: все что НЕ emiratesfashionweeks.com = локальная разработка
         var isLocal = !window.location.hostname.includes('emiratesfashionweeks.com');
@@ -26,10 +25,10 @@
           return; // Не делаем редирект, показываем статический HTML
         }
         
-        // На продакшене редиректим на домен
+        // На продакшене редиректим на корень с параметром to
         var qs = window.location.search || '';
         var target = '/station' + qs;
-        var url = 'https://emiratesfashionweeks.com' + target;
+        var url = 'https://emiratesfashionweeks.com/?to=' + encodeURIComponent(target);
         window.location.replace(url);
       })();
     </script>
