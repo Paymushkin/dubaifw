@@ -642,7 +642,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "bef85959-6c60-4577-a1e3-bb33e1bcf10d",
+    "buildId": "3bdcca4f-e5b6-49ab-9368-595dd4ff7f39",
     "buildAssetsDir": "assets/",
     "cdnURL": ""
   },
@@ -735,7 +735,7 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2025-10-22T10:52:21+00:00"
+          "lastmod": "2025-10-23T13:00:07+00:00"
         },
         "include": [],
         "exclude": [
@@ -1524,38 +1524,38 @@ const plugins = [
 const assets = {
   "/200.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
-    "mtime": "2025-10-22T10:52:24.142Z",
+    "etag": "\"993-MfJ5uEBKC1BTX4/YAy1UBJA3XiM\"",
+    "mtime": "2025-10-23T13:00:10.808Z",
     "size": 2451,
     "path": "../../.output/public/200.html"
   },
   "/404.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
-    "mtime": "2025-10-22T10:52:24.142Z",
+    "etag": "\"993-MfJ5uEBKC1BTX4/YAy1UBJA3XiM\"",
+    "mtime": "2025-10-23T13:00:10.808Z",
     "size": 2451,
     "path": "../../.output/public/404.html"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
-    "mtime": "2025-10-22T10:52:24.142Z",
+    "etag": "\"993-MfJ5uEBKC1BTX4/YAy1UBJA3XiM\"",
+    "mtime": "2025-10-23T13:00:10.808Z",
     "size": 2451,
     "path": "../../.output/public/index.html"
-  },
-  "/EFW_AWARDS_2025_april/index.html": {
-    "type": "text/html; charset=utf-8",
-    "etag": "\"993-ZT8JVODF0qqqkXsq2QQLndqLYhw\"",
-    "mtime": "2025-10-22T10:52:24.142Z",
-    "size": 2451,
-    "path": "../../.output/public/EFW_AWARDS_2025_april/index.html"
   },
   "/__sitemap__/style.xsl": {
     "type": "application/xml",
     "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
-    "mtime": "2025-10-22T10:52:24.142Z",
+    "mtime": "2025-10-23T13:00:10.808Z",
     "size": 5966,
     "path": "../../.output/public/__sitemap__/style.xsl"
+  },
+  "/EFW_AWARDS_2025_april/index.html": {
+    "type": "text/html; charset=utf-8",
+    "etag": "\"993-MfJ5uEBKC1BTX4/YAy1UBJA3XiM\"",
+    "mtime": "2025-10-23T13:00:10.808Z",
+    "size": 2451,
+    "path": "../../.output/public/EFW_AWARDS_2025_april/index.html"
   }
 };
 

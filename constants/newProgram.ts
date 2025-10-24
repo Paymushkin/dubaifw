@@ -85,12 +85,12 @@ export const NEW_PROGRAM_TABS = [
   },
   { 
     title: 'Model Casting', 
-    date: '5-6 November 2025',
-    mobileDate: '5-6 Nov',
+    date: '5-10 November 2025',
+    mobileDate: '5-10 Nov',
     events: [
       {
         type: 'event',
-        time: '5-6 November',
+        time: '5-10 November',
         place: 'Disclosed to Attendees',
         description: `Model Casting`,
         details: `WEDNESDAY & THURSDAY | INTERNATIONAL MODEL CONFERENCE & CASTING EVENT — organized by MAG, bringing together aspiring models to sign the contracts with leading Top Agencies from Milan, Paris, London and New York and to start your real model career right at the event

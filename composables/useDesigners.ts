@@ -108,13 +108,13 @@ export const useDesigners = () => {
 
   // Функция для форматирования дизайнера для отображения
   const formatDesigner = (designer: any): string => {
-    const maskedName = maskName(designer.name);
+    const name = designer.name; // Убираем маскировку, показываем полное имя
     const country = designer.country;
     
     if (designer.confirmed) {
-      return `• ${maskedName} - ${country}`;
+      return `• ${name} - ${country}`;
     } else {
-      return `• ${maskedName} - ${country} *PENDING MUTUAL APPROVAL`;
+      return `• ${name} - ${country} *PENDING MUTUAL APPROVAL`;
     }
   };
 

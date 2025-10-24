@@ -34,7 +34,7 @@ const sources = [
         "urls": [
             {
                 "loc": "/faq",
-                "lastmod": "2025-10-22T09:39:22.737Z"
+                "lastmod": "2025-10-22T11:35:01.195Z"
             },
             {
                 "loc": "/team",
@@ -42,7 +42,7 @@ const sources = [
             },
             {
                 "loc": "/",
-                "lastmod": "2025-10-22T09:39:23.348Z"
+                "lastmod": "2025-10-23T11:52:57.528Z"
             },
             {
                 "loc": "/offer",
@@ -54,7 +54,7 @@ const sources = [
             },
             {
                 "loc": "/visit",
-                "lastmod": "2025-10-22T09:39:22.595Z"
+                "lastmod": "2025-10-22T11:35:01.044Z"
             },
             {
                 "loc": "/widget",
@@ -62,11 +62,11 @@ const sources = [
             },
             {
                 "loc": "/gallery",
-                "lastmod": "2025-10-22T09:39:22.790Z"
+                "lastmod": "2025-10-22T11:35:01.226Z"
             },
             {
                 "loc": "/request",
-                "lastmod": "2025-10-22T09:39:22.833Z"
+                "lastmod": "2025-10-22T11:35:01.267Z"
             },
             {
                 "loc": "/station",
@@ -74,7 +74,7 @@ const sources = [
             },
             {
                 "loc": "/welcome",
-                "lastmod": "2025-10-22T09:39:23.759Z"
+                "lastmod": "2025-10-23T12:59:53.607Z"
             },
             {
                 "loc": "/approved",
@@ -82,7 +82,7 @@ const sources = [
             },
             {
                 "loc": "/calendar",
-                "lastmod": "2025-10-22T10:35:56.858Z"
+                "lastmod": "2025-10-22T12:17:35.241Z"
             },
             {
                 "loc": "/features",
@@ -94,7 +94,7 @@ const sources = [
             },
             {
                 "loc": "/EFW_AICONTEST",
-                "lastmod": "2025-10-22T09:39:22.930Z"
+                "lastmod": "2025-10-22T11:35:01.305Z"
             },
             {
                 "loc": "/EFW_AWARDS_2025_april",

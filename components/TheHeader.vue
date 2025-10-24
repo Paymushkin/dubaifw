@@ -5,20 +5,20 @@
     <!-- Navigation -->
     <nav class="bg-white">
       <div class="container mx-auto md:px-4 px-2">
-        <div class="flex items-center justify-between py-4">
+        <div class="flex items-center justify-between py-4 gap-1.5">
           <!-- Left side: Logo and Hashtag -->
-          <div class="flex items-center 2xl:gap-12 md:gap-6 gap-3">
+          <div class="flex items-center gap-2 md:gap-3 lg:gap-4 xl:gap-6 2xl:gap-12">
             <button 
               class="lg:hidden text-black"
               @click="isMenuOpen = !isMenuOpen"
             >
-              <MenuIcon v-if="!isMenuOpen" class="w-8 h-8" />
-              <XIcon v-else class="w-8 h-8" />
+              <MenuIcon v-if="!isMenuOpen" class="w-6 h-6" />
+              <XIcon v-else class="w-6 h-6" />
             </button>
             <div class="flex flex-col gap-1">
               <NuxtLink to="/" class="flex-shrink-0">
                 <!-- Основное лого везде -->
-                <LogoBlack class="h-5 2xl:h-8 w-[165px] 2xl:w-[254px]" />
+                <LogoBlack class="h-4 md:h-5 lg:h-6 xl:h-7 2xl:h-8 w-[132px] md:w-[165px] max-w-full lg:w-[198px] xl:w-[231px] 2xl:w-[254px]" />
               </NuxtLink>
             
               <NuxtLink 
@@ -31,7 +31,7 @@
           </div>
 
           <!-- Desktop Navigation Links -->
-          <div class="hidden md:flex items-center 2xl:gap-8 gap-4">
+          <div class="hidden md:flex items-center gap-2 lg:gap-3 xl:gap-4 2xl:gap-8">
             <a
               v-for="link in navLinks"
               :key="link.id"
@@ -44,7 +44,7 @@
           </div>
 
           <!-- Desktop Actions -->
-          <div class="flex items-center 2xl:gap-5 gap-3">
+          <div class="flex items-center gap-1.5 lg:gap-3 xl:gap-4 2xl:gap-5">
             <!-- <NuxtLink target="_blank" 
               to="/gallery"
               v-if="!isGalleryPage">

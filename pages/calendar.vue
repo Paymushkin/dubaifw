@@ -42,6 +42,13 @@
         </button>
       </div>
       
+      <!-- Сообщение для iOS и Android пользователей -->
+      <div v-else class="mb-6">
+        <div class="text-white text-lg font-semibold">
+          Opening calendar subscription...
+        </div>
+      </div>
+      
       <!-- Кнопка для перехода на главную -->
       <div class="mt-4">
         <button 
@@ -85,13 +92,19 @@ const isIOS = () => {
   return userAgent.includes('iphone') || userAgent.includes('ipad') || userAgent.includes('mac')
 }
 
-// Автоматическое открытие для iOS
+// Определяем, является ли устройство Android
+const isAndroid = () => {
+  const userAgent = navigator.userAgent.toLowerCase()
+  return userAgent.includes('android')
+}
+
+// Автоматическое открытие для iOS и Android
 onMounted(() => {
   // Показываем кнопку для всех платформ
   showButton.value = true
   
-  if (isIOS()) {
-    // Для iOS также открываем автоматически через небольшую задержку
+  if (isIOS() || isAndroid()) {
+    // Для iOS и Android открываем автоматически через небольшую задержку
     setTimeout(() => {
       window.location.href = targetUrl
     }, 1000)
