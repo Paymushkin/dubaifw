@@ -74,7 +74,7 @@ const sources = [
             },
             {
                 "loc": "/welcome",
-                "lastmod": "2025-10-23T12:59:53.607Z"
+                "lastmod": "2025-10-27T11:12:37.984Z"
             },
             {
                 "loc": "/approved",

@@ -31,6 +31,7 @@ export { setInterval } from '#app/compat/interval';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
 export { useCompaniesCount } from '../composables/useCompaniesCount';
 export { useDesigners } from '../composables/useDesigners';
+export { fetchFaces, useFaces } from '../composables/useFaces';
 export { useNumberAnimation } from '../composables/useNumberAnimation';
 export { useVideoVisibility } from '../composables/useVideoVisibility';
 export { getOptimizedImageUrl, preloadImage, preloadImages, getImageDimensions, getOptimizedImageAttributes } from '../utils/imageOptimization';
@@ -38,4 +39,5 @@ export { updateSiteConfig } from '../node_modules/nuxt-site-config/dist/runtime/
 export { useNitroOrigin } from '../node_modules/nuxt-site-config/dist/runtime/nuxt/composables/useNitroOrigin';
 export { useSiteConfig } from '../node_modules/nuxt-site-config/dist/runtime/nuxt/composables/useSiteConfig';
 export { createSitePathResolver, withSiteTrailingSlash, withSiteUrl } from '../node_modules/nuxt-site-config/dist/runtime/nuxt/composables/utils';
+export { useNuxtDevTools } from '../node_modules/nuxt/node_modules/@nuxt/devtools/dist/runtime/use-nuxt-devtools';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';

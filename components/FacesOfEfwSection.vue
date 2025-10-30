@@ -97,51 +97,10 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useFaces } from '~/composables/useFaces';
 
-// Данные о людях
-const facesData = ref([
-  {
-    name: 'Olga Khayrullova',
-    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-3.png',
-    icon: true,
-    links: [
-      { text: 'Olga Gallery 1', url: 'https://disk.yandex.ru/d/H1mkiuK2ZGnGtg' },
-      { text: 'Olga Gallery 2', url: 'https://disk.yandex.ru/d/OyDVLRK3xh4XGA' },
-      { text: 'Olga Gallery 3', url: 'https://disk.yandex.ru/d/i8UrwKqzfvP87Q' },
-      { text: 'Olga Gallery 4', url: 'https://disk.yandex.ru/d/xcI2edSjve_VcQ' }
-    ]
-  },
-  {
-    name: 'Khalimova Liza',
-    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-2.png',
-    icon: true,
-    links: [
-      { text: 'Liza Gallery', url: 'https://disk.yandex.ru/a/O-Yaq82vmplm-g' }
-    ]
-  },
-  {
-    name: 'Olga Baltrukevica',
-    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-1.png',
-    icon: true,
-    links: [
-      { text: 'Olga Gallery', url: 'https://failiem.lv/u/trcyc4awyu' }
-    ]
-  },
-  {
-    name: 'Ekaterina Potanina',
-    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-4.png',
-    links: [
-      { text: 'Instagram', url: 'https://www.instagram.com/potanina_ea/' }
-    ]
-  },
-  {
-    name: 'Katerina Melikhova',
-    image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-5.png',
-    links: [
-      { text: 'Instagram', url: 'https://www.instagram.com/katya_katerinina?igsh=YTZ5MnBodnN2dm5v' }
-    ]
-  }
-])
+// Используем composable для работы с данными лиц
+const { facesData, isLoading, isDataUpdated, fetchFaces } = useFaces();
 
 const swiperInstance = ref(null);
 
@@ -160,6 +119,19 @@ const handleNext = () => {
 const onSlideChange = () => {
   // Можно добавить логику при смене слайда
 };
+
+// Загружаем данные при монтировании компонента
+onMounted(async () => {
+  // Пытаемся обновить данные из Google Sheets (только если еще не обновлены)
+  if (!isDataUpdated.value) {
+    try {
+      await fetchFaces();
+    } catch (error) {
+      console.error('Ошибка загрузки данных лиц:', error);
+      // Используем локальные данные как fallback
+    }
+  }
+});
 </script>
 
 <style scoped>
