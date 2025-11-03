@@ -67,22 +67,22 @@ export const NEW_PROGRAM_TABS = [
   //      },
   //   ],
   // },
-  {
-    title: 'Pre-Launch',
-    date: '4 November 2025',
-    mobileDate: '4 Nov',
-    events: [
-      {
-        type: 'event',
-        time: '4 November',
-        place: 'Belcanto Dubai Opera',
-        description: 'Pre-Launch',
-        details: 'TUESDAY TONIGHT | EXCLUSIVE PRE-LAUNCH & PORTFOLIO EVENT — a special presentation introducing participating designers and brands.<br><strong>By Invitation Only</strong>',
-        buttonText: ' REQUEST INVITE >',
-        buttonLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf9UiUI9FshAS-G9Ikkdj5Pq9DV3zkwtqdNdoNXeLxe2LQeEQ/viewform'
-       },
-    ],
-  },
+  // {
+  //   title: 'Pre-Launch',
+  //   date: '4 November 2025',
+  //   mobileDate: '4 Nov',
+  //   events: [
+  //     {
+  //       type: 'event',
+  //       time: '4 November',
+  //       place: 'Belcanto Dubai Opera',
+  //       description: 'Pre-Launch',
+  //       details: 'TUESDAY TONIGHT | EXCLUSIVE PRE-LAUNCH & PORTFOLIO EVENT — a special presentation introducing participating designers and brands.<br><strong>By Invitation Only</strong>',
+  //       buttonText: ' REQUEST INVITE >',
+  //       buttonLink: 'https://docs.google.com/forms/d/e/1FAIpQLSf9UiUI9FshAS-G9Ikkdj5Pq9DV3zkwtqdNdoNXeLxe2LQeEQ/viewform'
+  //      },
+  //   ],
+  // },
   { 
     title: 'Model Casting', 
     date: '5-10 November 2025',

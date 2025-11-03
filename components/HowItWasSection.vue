@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto">
-  <h2 id="previous-seasons" data-nosnippet class="text-xl md:text-3xl xl:text-4xl scroll-mt-[120px] md:scroll-mt-[100px]">PREVIOUS 13 SEASONS</h2>
+  <h2 id="previous-seasons" data-nosnippet class="text-xl md:text-3xl xl:text-4xl scroll-mt-[120px] md:scroll-mt-[100px]">14 SEASONS</h2>
     <p class="text-sm md:text-base xl:text-xl mb-4 xl:mb-8 md:mb-6">collections</p>
     <div 
       class="overflow-x-auto hide-scrollbar -mx-4 md:mx-0 xl:mb-5 md:mb-4 mb-3 cursor-grab active:cursor-grabbing" 

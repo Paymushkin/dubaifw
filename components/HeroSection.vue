@@ -24,7 +24,7 @@
         14<sup class="xl:text-2xl md:text-xl text-base align-top">th</sup> EMIRATES&nbsp;FASHION&nbsp;WEEK&nbsp;
         <sup class="xl:text-3xl md:text-3xl text-base align-top">®</sup> 
       </h1>
-      <span class="xl:text-[60px] text-xl text-white font-bold">Spring Summer 2026</span>
+      <span class="xl:text-[60px] text-xl text-white font-bold md:mb-4 mb-2">Spring Summer 2026</span>
       <span class="text-white mb-10 text-xl font-bold">8-11 November 2025</span>
       <GalleryIframe :show-fog="false" />
     </div>

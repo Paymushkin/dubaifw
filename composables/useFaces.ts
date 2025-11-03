@@ -5,6 +5,8 @@ import { ref, computed } from 'vue'
 const localFacesData = [
   {
     name: 'Olga Khayrullova',
+    title: 'Personal Fashion Stylist',
+    subtitle: 'Recognized by EFW SS26 Season',
     image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-3.png',
     icon: true,
     order: 1,
@@ -17,6 +19,8 @@ const localFacesData = [
   },
   {
     name: 'Khalimova Liza',
+    title: 'Designer',
+    subtitle: 'Recognized by EFW SS26 Season',
     image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-2.png',
     icon: true,
     order: 2,
@@ -26,6 +30,8 @@ const localFacesData = [
   },
   {
     name: 'Olga Baltrukevica',
+    title: 'Model',
+    subtitle: 'Recognized by EFW SS26 Season',
     image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-1.png',
     icon: true,
     order: 3,
@@ -35,6 +41,8 @@ const localFacesData = [
   },
   {
     name: 'Ekaterina Potanina',
+    title: 'Influencer',
+    subtitle: 'Recognized by EFW SS26 Season',
     image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-4.png',
     icon: false,
     order: 4,
@@ -44,6 +52,8 @@ const localFacesData = [
   },
   {
     name: 'Katerina Melikhova',
+    title: 'Guest',
+    subtitle: 'Recognized by EFW SS26 Season',
     image: 'https://storage.yandexcloud.net/videos-meyou/efw2025/ai/faces/face-5.png',
     icon: false,
     order: 5,
@@ -84,6 +94,8 @@ const transformFacesData = (rawData: any[]) => {
       
       return {
         name: row.name,
+        title: row.title || '',
+        subtitle: row.subtitle || '',
         image: row.image_url,
         icon: row.icon === 'TRUE' || row.icon === true,
         order: parseInt(row.order) || 999, // Порядковый номер, по умолчанию 999

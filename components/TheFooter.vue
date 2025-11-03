@@ -148,10 +148,10 @@ import ContactForm from './ContactForm.vue';
 const router = useRouter();
 
 const menuLinks = [
-  { name: 'HOW IT WAS', href: '/#how-it-was', id: 'how-it-was' },
+  { name: 'HOW IT WAS', href: '/#fall-winter-2025', id: 'fall-winter-2025' },
   // { name: 'SCHEDULE', href: '/#program', id: 'program' },
   { name: 'DESIGNERS', href: '/#designers', id: 'designers' },
-  { name: 'FACES', href: '/#faces', id: 'faces' },
+  { name: 'FACES', href: '/#faces-efw', id: 'faces-efw' },
   { name: 'FEATURES', href: '/features', id: 'features' },
   { name: 'TRIAL SHOWCASE SPOTS', href: '/trial', id: 'trial' },
   { name: 'AWARDS', href: 'https://deluxebeauty.world/', id: 'awards' },

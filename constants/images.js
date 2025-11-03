@@ -50,7 +50,12 @@ import image37 from '~/assets//image/photos/photo-7-1.webp'
 import image38 from '~/assets//image/photos/photo-8-1.webp'
 import image39 from '~/assets//image/photos/photo-12-1.webp'
 
+import image54 from '~/assets//image/designers/54.png'
+import image55 from '~/assets//image/designers/55.png'
+import image56 from '~/assets//image/designers/56.png'
+
 export const tabs = [
+  { year: '2025', season: 'Spring/Summer', images: [image54, image55, image56], designers: ['Olga Khayrullova', 'Khalimova Liza', 'Olga Baltrukevica'] },
   { year: '2025', season: 'Fall/Winter', images: [image37, image38, image39], designers: ['OSMOSIS', 'NERMIN', 'AISHA'] },
   { year: '2024', season: 'Spring/Summer', images: [image34, image35, image36], designers: ['CHOLPONA', 'Icona', 'Suhaila'] },
   { year: '2024', season: 'Fall/Winter', images: [image31, image32, image33], designers: ['Danatella', 'Alisia Fiori', 'BERGE'] },
@@ -120,6 +125,10 @@ import designer50 from '@/assets/image/designers/50.webp';
 import designer51 from '@/assets/image/designers/51.webp';
 import designer52 from '@/assets/image/designers/52.webp';
 import designer53 from '@/assets/image/designers/53.webp';
+import designer54 from '@/assets/image/designers/54.png';
+import designer55 from '@/assets/image/designers/55.png';
+import designer56 from '@/assets/image/designers/56.png';
+
 
 
 // Массив дизайнеров с их данными
@@ -336,4 +345,17 @@ export const designers = [
     name: 'Zain Al Abideen Falih',
     image: designer53
   },
+
+  {
+    name: 'Olga Khayrullova',
+    image: designer54
+  },
+  {
+    name: 'Khalimova Liza',
+    image: designer55
+  },
+  {
+    name: 'Olga Baltrukevica',
+    image: designer56
+  }
 ];

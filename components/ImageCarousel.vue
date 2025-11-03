@@ -2,7 +2,7 @@
   <div class="image-carousel-container">
     <div class="carousel-header flex justify-between items-center mb-6">
       <h2 id="economy-dubai" data-nosnippet class="text-2xl md:text-3xl lg:text-4xl">{{ title }}</h2>
-      <div class="flex relative items-center gap-4">
+      <div class="hidden md:flex relative items-center gap-4">
         <div 
           @click="swiperRef?.slidePrev()"
           class="swiper-button-prev !static md:!w-10 md:!h-10 !w-6 !h-6 !text-black after:!text-xl cursor-pointer"

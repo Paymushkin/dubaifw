@@ -29,7 +29,7 @@
           This method allows you to embed the widget using JavaScript. The widget will automatically adapt to the container size.
         </p>
         <div class="bg-gray-50 p-4 rounded-lg mb-4 relative">
-          <pre class="text-sm overflow-x-auto pr-16"><code class="block whitespace-pre-wrap break-all">&lt;script src="https://meyou.id/public/meyou_init.js" id="meyou_init" defer="" data-event="https://meyou.id/efw2025/live?UTM=smi&header&footer&adv&tag"&gt;&lt;/script&gt;</code></pre>
+          <pre class="text-sm overflow-x-auto pr-16"><code class="block whitespace-pre-wrap break-all">&lt;script src="https://meyou.id/public/meyou_init.js" id="meyou_init" defer="" data-event="https://meyou.id/efwss26/live?UTM=smi&header&footer&adv&tag"&gt;&lt;/script&gt;</code></pre>
           <button 
             @click="copyCode('script')"
             class="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 transition-colors bg-white rounded-md shadow-sm"
@@ -60,7 +60,7 @@
           This method allows you to embed the widget directly using an HTML iframe tag. You can control the widget dimensions.
         </p>
         <div class="bg-gray-50 p-4 rounded-lg mb-4 relative">
-          <pre class="text-sm overflow-x-auto pr-16"><code class="block whitespace-pre-wrap break-all">&lt;iframe width="100%" height="100%" allowtransparency="" allowfullscreen="" src="https://meyou.id/efw2025/live?UTM=smi&header&footer&adv&tag" frameborder="0"&gt;&lt;/iframe&gt;</code></pre>
+          <pre class="text-sm overflow-x-auto pr-16"><code class="block whitespace-pre-wrap break-all">&lt;iframe width="100%" height="100%" allowtransparency="" allowfullscreen="" src="https://meyou.id/efwss26/live?UTM=smi&header&footer&adv&tag" frameborder="0"&gt;&lt;/iframe&gt;</code></pre>
           <button 
             @click="copyCode('iframe')"
             class="absolute top-4 right-4 p-2 text-gray-500 hover:text-gray-700 transition-colors bg-white rounded-md shadow-sm"

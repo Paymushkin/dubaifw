@@ -642,7 +642,7 @@ function _expandFromEnv(value) {
 const _inlineRuntimeConfig = {
   "app": {
     "baseURL": "/",
-    "buildId": "81cab356-8070-4595-96d8-c5769001c2a5",
+    "buildId": "8a5150b8-ad99-4ae3-92a3-0cbfabafb127",
     "buildAssetsDir": "assets/",
     "cdnURL": ""
   },
@@ -735,7 +735,7 @@ const _inlineRuntimeConfig = {
         "sitemapName": "sitemap.xml",
         "route": "sitemap.xml",
         "defaults": {
-          "lastmod": "2025-10-27T11:12:42+00:00"
+          "lastmod": "2025-11-03T10:48:15+00:00"
         },
         "include": [],
         "exclude": [
@@ -1524,36 +1524,36 @@ const plugins = [
 const assets = {
   "/200.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9dc-7l2qK2PkcXn7TylmQmeuVKMHiG4\"",
-    "mtime": "2025-10-27T11:12:46.319Z",
+    "etag": "\"9dc-/YPw0WoeLjdl1tKzXSfzUnieFrY\"",
+    "mtime": "2025-11-03T10:48:18.725Z",
     "size": 2524,
     "path": "../../.output/public/200.html"
   },
   "/404.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9dc-7l2qK2PkcXn7TylmQmeuVKMHiG4\"",
-    "mtime": "2025-10-27T11:12:46.318Z",
+    "etag": "\"9dc-/YPw0WoeLjdl1tKzXSfzUnieFrY\"",
+    "mtime": "2025-11-03T10:48:18.725Z",
     "size": 2524,
     "path": "../../.output/public/404.html"
   },
   "/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9dc-7l2qK2PkcXn7TylmQmeuVKMHiG4\"",
-    "mtime": "2025-10-27T11:12:46.319Z",
+    "etag": "\"9dc-/YPw0WoeLjdl1tKzXSfzUnieFrY\"",
+    "mtime": "2025-11-03T10:48:18.725Z",
     "size": 2524,
     "path": "../../.output/public/index.html"
   },
   "/EFW_AWARDS_2025_april/index.html": {
     "type": "text/html; charset=utf-8",
-    "etag": "\"9dc-7l2qK2PkcXn7TylmQmeuVKMHiG4\"",
-    "mtime": "2025-10-27T11:12:46.318Z",
+    "etag": "\"9dc-/YPw0WoeLjdl1tKzXSfzUnieFrY\"",
+    "mtime": "2025-11-03T10:48:18.725Z",
     "size": 2524,
     "path": "../../.output/public/EFW_AWARDS_2025_april/index.html"
   },
   "/__sitemap__/style.xsl": {
     "type": "application/xml",
     "etag": "\"174e-04KStjaK+j7dbchiMHqnnHF1ICc\"",
-    "mtime": "2025-10-27T11:12:46.318Z",
+    "mtime": "2025-11-03T10:48:18.725Z",
     "size": 5966,
     "path": "../../.output/public/__sitemap__/style.xsl"
   }
