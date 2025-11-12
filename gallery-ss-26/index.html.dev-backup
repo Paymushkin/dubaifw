@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery SS 2026 — Emirates Fashion Week Dubai</title>
+    <link rel="canonical" href="https://emiratesfashionweeks.com/gallery-ss-26/" />
+    <meta name="description" content="Spring/Summer 2026 gallery of Emirates Fashion Week Dubai. Browse photo and video highlights from runway shows, designers, and special events." />
+    <meta property="og:title" content="Gallery SS 2026 — Emirates Fashion Week Dubai" />
+    <meta property="og:description" content="Spring/Summer 2026 gallery of Emirates Fashion Week Dubai. Browse photo and video highlights from runway shows, designers, and special events." />
+    <meta property="og:image" content="https://emiratesfashionweeks.com/seo-poster-wa.png?v=2" />
+    <meta property="og:url" content="https://emiratesfashionweeks.com/gallery-ss-26/" />
+    <meta property="og:site_name" content="Emirates Fashion Week" />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Meta refresh отключен для локальной разработки -->
+  </head>
+  <body>
+    <script>
+      (function () {
+        var isLocal = !window.location.hostname.includes('emiratesfashionweeks.com');
+
+        if (isLocal) {
+          return;
+        }
+
+        var qs = window.location.search || '';
+        var target = '/gallery-ss-26' + qs;
+        var url = 'https://emiratesfashionweeks.com/?to=' + encodeURIComponent(target);
+        window.location.replace(url);
+      })();
+    </script>
+  </body>
+</html>
+
