@@ -1,0 +1,6 @@
+# Редирект с emiratesfashionweeks.com на www.emiratesfashionweek.com
+# Это работает только если домен настроен в Netlify
+# Основной редирект выполняется через JavaScript в index.html
+
+/api/* /.netlify/functions/:splat 200
+
